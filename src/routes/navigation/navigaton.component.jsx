@@ -11,6 +11,7 @@ const Navigation = () => {
                     <img
                         src={jmsLogo}
                         className="logo"/>
+                    <h3>JUSTMESTYLES</h3>
                 </Link>
                 <div className="nav-links-container">
                     <Link className="nav-link" to='/shop'>

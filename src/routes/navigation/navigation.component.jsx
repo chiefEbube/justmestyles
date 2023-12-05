@@ -20,7 +20,7 @@ const Navigation = () => {
                 <Link className="logo-container" to='/'>
                     <img
                         src={jmsLogo}
-                        className="logo" />
+                        className="logo" alt="logo"/>
                 </Link>
                 <div className="nav-links-container">
                     <Link className="nav-link" to='/shop'>

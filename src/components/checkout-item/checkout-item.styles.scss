@@ -25,9 +25,12 @@
 
     .quantity {
         display: flex;
+        align-items: center;
 
         .arrow {
             cursor: pointer;
+            color: rgb(75, 75, 75);
+            font-size: 16px;
         }
 
         .value {

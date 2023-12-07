@@ -2,7 +2,6 @@ import { useState } from "react"
 import { FaGoogle } from "@react-icons/all-files/fa/FaGoogle";
 import {
     signInWithGooglePopup,
-    createUserDocumentFromAuth,
     signInAuthUserWithEmailAndPassword
 } from "../../utils/firebase/firebase.utils"
 

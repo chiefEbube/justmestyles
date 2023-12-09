@@ -11,11 +11,10 @@ export const CategoriesProvider = ({ children }) => {
     useEffect(() => {
         const getCategoriesMap = async () => {
             const categoryMap = await getCategoriesAnddocuments()
-            console.log(categoryMap)
-            setCategoriesMap(categoriesMap)
+            setCategoriesMap(categoryMap)
         }
         getCategoriesMap()
-    }, [categoriesMap])
+    }, [])
 
     const value = { categoriesMap }
     return (

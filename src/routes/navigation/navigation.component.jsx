@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom"
 import jmsLogo from '../../assets/JMS.png'
 
-import './navigation.styles.scss'
+import {NavigationContainer} from './navigation.styles'
 import { UserContext } from "../../contexts/user.context"
 import { useContext } from "react"
 
@@ -16,7 +16,7 @@ const Navigation = () => {
     
     return (
         <>
-            <div className="navigation">
+            <NavigationContainer>
                 <Link className="logo-container" to='/'>
                     <img
                         src={jmsLogo}
@@ -43,7 +43,7 @@ const Navigation = () => {
                     <CartIcon/>
                 </div>
                 {isCartOpen && <CartDropdown/>}
-            </div>
+            </NavigationContainer>
             <Outlet />
         </>
     )
